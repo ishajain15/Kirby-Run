@@ -1,6 +1,13 @@
 # Kirby-Run
 My attempt at making a platformer game. I drew all of the sprites on my own.
-I decided to use Kirby as the main character for the game.
+I decided to use Kirby as the main character for the game. This project is not done yet. Still need to add a health bar, enemies, and update a few sprites.
+
+Controls:
+F to shoot
+R to kick
+W to jump
+W + E to glide
+
 
 <img width="481" alt="Start Image" src="https://user-images.githubusercontent.com/30183136/84968062-9d385180-b0e3-11ea-9ae4-c7c8ad62fd35.PNG">
 
