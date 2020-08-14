@@ -49,14 +49,14 @@ public class Level1State extends GameState {
 	private void populateEnemies() {
 		enemies = new ArrayList<Enemy>();
 
-		Slugger s;
+		Gordo gordo;
 		Point[] points = new Point[] { new Point(200, 100), new Point(860, 200), new Point(1525, 200),
 				new Point(1680, 200), new Point(1800, 200) };
 
 		for (int i = 0; i < points.length; i++) {
-			s = new Slugger(tileMap);
-			s.setPosition(points[i].x, points[i].y);
-			enemies.add(s);
+			gordo = new Gordo(tileMap);
+			gordo.setPosition(points[i].x, points[i].y);
+			enemies.add(gordo);
 		}
 	}
 

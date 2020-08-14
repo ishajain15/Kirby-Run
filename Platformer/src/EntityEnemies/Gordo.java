@@ -6,11 +6,11 @@ import java.awt.image.BufferedImage;
 
 import javax.imageio.ImageIO;
 
-public class Slugger extends Enemy {
+public class Gordo extends Enemy {
 
     private BufferedImage[] sprites;
 
-    public Slugger(TileMap tm) {
+    public Gordo(TileMap tm) {
         super(tm);
 
         moveSpeed = 0.3;
@@ -28,7 +28,7 @@ public class Slugger extends Enemy {
 
         // load sprites
         try {
-            BufferedImage spritesheet = ImageIO.read(getClass().getResourceAsStream("/Sprites/Enemies/slugger.gif"));
+            BufferedImage spritesheet = ImageIO.read(getClass().getResourceAsStream("/Sprites/Enemies/gordo.png"));
 
             sprites = new BufferedImage[3];
             for (int i = 0; i < sprites.length; i++) {
