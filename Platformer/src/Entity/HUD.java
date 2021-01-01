@@ -12,7 +12,7 @@ public class HUD {
     public HUD(Player p) {
         player = p;
         try {
-            image = ImageIO.read(getClass().getResourceAsStream("/HUD/hud.gif"));
+            image = ImageIO.read(getClass().getResourceAsStream("/HUD/healthstar.png"));
             font = new Font("Arial", Font.PLAIN, 14);
         } catch (Exception e) {
             e.printStackTrace();
