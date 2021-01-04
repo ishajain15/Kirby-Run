@@ -5,17 +5,16 @@ I decided to use Kirby as the main character for the game. This project is not d
 Controls:
 
 F to shoot
-![](shoot.gif)
 <img src="shoot.gif" width="480" height="360"/>
 
 R to kick
-![](kick.gif)
+<img src="kick.gif" width="480" height="360"/>
 
 W to jump
-![](jump.gif)
+<img src="jump.gif" width="480" height="360"/>
 
 W + E to glide
-![](glide.gif)
+<img src="glide.gif" width="480" height="360"/>
 
 
 <img width="481" alt="Start Image" src="https://user-images.githubusercontent.com/30183136/84968062-9d385180-b0e3-11ea-9ae4-c7c8ad62fd35.PNG">
