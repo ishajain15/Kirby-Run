@@ -3,19 +3,17 @@ My attempt at making a platformer game. I drew all of the sprites on my own.
 I decided to use Kirby as the main character for the game. This project is not done yet. Still need to add a health bar, enemies, and update a few sprites.
 
 Controls:
-<br />
-F to shoot
+F to shoot <br />
 <img src="shoot.gif" width="480" height="360"/>
-<br />
-R to kick
+
+R to kick <br />
 <img src="kick.gif" width="480" height="360"/>
-<br />
-W to jump
+
+W to jump <br />
 <img src="jump.gif" width="480" height="360"/>
-<br />
-W + E to glide
+
+W + E to glide <br />
 <img src="glide.gif" width="480" height="360"/>
-<br />
 
 
 <img width="481" alt="Start Image" src="https://user-images.githubusercontent.com/30183136/84968062-9d385180-b0e3-11ea-9ae4-c7c8ad62fd35.PNG">
