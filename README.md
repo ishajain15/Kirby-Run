@@ -6,7 +6,7 @@ Controls:
 
 F to shoot
 ![](shoot.gif)
-<img src="shoot.gif" width="250" height="250"/>
+<img src="shoot.gif" width="480" height="360"/>
 
 R to kick
 ![](kick.gif)
