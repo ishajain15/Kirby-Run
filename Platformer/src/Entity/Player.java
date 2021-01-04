@@ -12,17 +12,17 @@ public class Player extends MapObject {
 	// player stuff
 	private int health;
 	private int maxHealth;
-	private int fire;
+	private int star;
 	private int maxFire;
 	private boolean dead;
 	private boolean flinching;
 	private long flinchTimer;
 
-	// fireball
+	// starball
 	private boolean firing;
-	private int fireCost;
-	private int fireBallDamage;
-	private ArrayList<FireBall> fireBalls;
+	private int starCost;
+	private int starDamage;
+	private ArrayList<Star> stars;
 
 	// scratch
 	private boolean scratching;
@@ -64,11 +64,11 @@ public class Player extends MapObject {
 		facingRight = true;
 
 		health = maxHealth = 5;
-		fire = maxFire = 2500;
+		star = maxFire = 2500;
 
-		fireCost = 200;
-		fireBallDamage = 5;
-		fireBalls = new ArrayList<FireBall>();
+		starCost = 200;
+		starDamage = 5;
+		stars = new ArrayList<Star>();
 
 		scratchDamage = 8;
 		scratchRange = 40;
@@ -108,7 +108,7 @@ public class Player extends MapObject {
 	}
 
 	public int getFire() {
-		return fire;
+		return star;
 	}
 
 	public int getMaxFire() {
@@ -151,11 +151,11 @@ public class Player extends MapObject {
 				}
 			}
 
-			// fireballs
-			for (int j = 0; j < fireBalls.size(); j++) {
-				if (fireBalls.get(j).intersects(e)) {
-					e.hit(fireBallDamage);
-					fireBalls.get(j).setHit();
+			// starballs
+			for (int j = 0; j < stars.size(); j++) {
+				if (stars.get(j).intersects(e)) {
+					e.hit(starDamage);
+					stars.get(j).setHit();
 					break;
 				}
 			}
@@ -259,24 +259,24 @@ public class Player extends MapObject {
 				firing = false;
 		}
 
-		// fireball attack
-		fire += 1;
-		if (fire > maxFire)
-			fire = maxFire;
+		// starball attack
+		star += 1;
+		if (star > maxFire)
+			star = maxFire;
 		if (firing && currentAnimation != FIREBALL) {
-			if (fire > fireCost) {
-				fire -= fireCost;
-				FireBall fb = new FireBall(tileMap, facingRight);
+			if (star > starCost) {
+				star -= starCost;
+				Star fb = new Star(tileMap, facingRight);
 				fb.setPosition(x, y);
-				fireBalls.add(fb);
+				stars.add(fb);
 			}
 		}
 
-		// update fireballs
-		for (int i = 0; i < fireBalls.size(); i++) {
-			fireBalls.get(i).update();
-			if (fireBalls.get(i).shouldRemove()) {
-				fireBalls.remove(i);
+		// update starballs
+		for (int i = 0; i < stars.size(); i++) {
+			stars.get(i).update();
+			if (stars.get(i).shouldRemove()) {
+				stars.remove(i);
 				i--;
 			}
 		}
@@ -361,9 +361,9 @@ public class Player extends MapObject {
 	public void draw(Graphics2D g) {
 		setMapPosition();
 
-		// draw fireballs
-		for (int i = 0; i < fireBalls.size(); i++) {
-			fireBalls.get(i).draw(g);
+		// draw starballs
+		for (int i = 0; i < stars.size(); i++) {
+			stars.get(i).draw(g);
 		}
 
 		// draw player
