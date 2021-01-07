@@ -1,5 +1,5 @@
 # Kirby-Run
-My attempt at making a platformer game. I drew all of the sprites on my own.
+My attempt at making a platformer game. I created all of the sprites & backgrounds using Paint.NET.
 I decided to use Kirby as the main character for the game. <br />
 <img src="intro screen.gif" width="480" height="360"/>
 <br />
